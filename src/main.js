@@ -25,7 +25,7 @@ function createWindow() {
             args: [path, '--port', port, '--browser', false]
         };
 
-        pyshell.run('engine.py', options, errorLog);
+        pyshell.run('src/engine.py', options, errorLog);
         url = `http://localhost:${port}`;
         console.log(url)
 
@@ -33,7 +33,7 @@ function createWindow() {
             width: 800,
             height: 600
         });
-        window.loadFile('loading.html');
+        window.loadFile('src/loading.html');
 
         setTimeout(() => {
             window.loadURL(url);
