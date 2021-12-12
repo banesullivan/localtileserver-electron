@@ -14,7 +14,12 @@ as a standalone application
 
 ## ⬇️ Installation
 
+Install localtileserver:
 ```bash
-pip install -r requirements.txt
+conda env create --file=environment.yaml
+```
+
+Launch Electron app:
+```bash
 npm start
 ```
